@@ -1,0 +1,19 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1rem;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  margin: -1px; 
+  overflow: hidden; 
+  clip: rect(0, 0, 0, 0); 
+  white-space: nowrap; /* Prevent the text from wrapping */
+  border: 0;
+}
