@@ -12,8 +12,6 @@ $text-xl: clamp(1.5rem, 3.055vw + 0.784rem, 2.25rem); //36px (destop) 24px (mobi
 $text-lg: 1.25rem;      //20px
 $text-md: 0.9375rem;    //15px
 $text-sm: 0.8125rem;    //13px
-//SIZE-MOBILE
-$text-mobile-xl: 1.5rem; //24px
 
 //LINE-HEIGHT
 $line-height-lg: 1.6;
@@ -31,6 +29,62 @@ $letter-bigger: 0.25px;
     $size: $text-xl,
     $height: $line-height-md,
     $letter: $letter-bigger
+) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $letter;
+}
+
+@mixin text-preset-2 (
+    $family: $primary-family,
+    $weight: $extralight,
+    $size: $text-xl,
+    $height: $line-height-md,
+    $letter: $letter-bigger
+) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $letter;
+}
+
+@mixin text-preset-3 (
+    $family: $primary-family,
+    $weight: $semibold,
+    $size: $text-lg,
+    $height: $line-height-sm,
+    $letter: $letter-default
+) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $letter;
+}
+
+@mixin text-preset-4 (
+    $family: $primary-family,
+    $weight: $regular,
+    $size: $text-md,
+    $height: $line-height-md,
+    $letter: $letter-default
+) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $letter;
+}
+
+@mixin text-preset-5 (
+    $family: $primary-family,
+    $weight: $regular,
+    $size: $text-sm,
+    $height: $line-height-lg,
+    $letter: $letter-default
 ) {
     font-family: $family;
     font-weight: $weight;
