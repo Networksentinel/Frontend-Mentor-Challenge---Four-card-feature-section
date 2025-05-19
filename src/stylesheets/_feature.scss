@@ -6,3 +6,22 @@
     justify-content: center;
     gap: $space-xxl;
 }
+
+.feature__intro {
+    width: clamp(19.75rem, 84.2666vw, 33.75rem);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    & p {
+        @include text-preset-4;
+    }
+}
+
+.feature__intro-1sttitle {
+    @include text-preset-2;
+}
+
+.feature__intro-2ndtitle {
+    @include text-preset-1;
+}

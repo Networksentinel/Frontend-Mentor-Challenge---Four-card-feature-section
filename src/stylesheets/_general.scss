@@ -10,11 +10,8 @@ body {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-}
-
-main {
-    padding: 56px 30px 46px 31px;
 }
 
 .sr-only {
