@@ -8,7 +8,7 @@ $regular: 400;
 $semibold: 600;
 
 //SIZE
-$text-xl: 2.25rem;      //36px
+$text-xl: clamp(1.5rem, 3.055vw + 0.784rem, 2.25rem); //36px (destop) 24px (mobile)
 $text-lg: 1.25rem;      //20px
 $text-md: 0.9375rem;    //15px
 $text-sm: 0.8125rem;    //13px
