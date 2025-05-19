@@ -3,5 +3,6 @@
 .feature {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: $space-xxl;
 }

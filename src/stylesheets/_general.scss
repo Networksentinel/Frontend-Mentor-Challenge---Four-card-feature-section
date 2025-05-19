@@ -5,7 +5,16 @@ html {
 }
 
 body {
+    min-height: 100vh;
     font-size: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    padding: 56px 30px 46px 31px;
 }
 
 .sr-only {
