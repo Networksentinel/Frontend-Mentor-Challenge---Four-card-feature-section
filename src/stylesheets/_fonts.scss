@@ -1,7 +1,6 @@
 //-------------GENERAL TYPOGRAPHY
-
 //FAMILY
-$primary-font: "Poppins", sans-serif;
+$primary-family: "Poppins", sans-serif;
 
 //WEIGHT
 $extralight: 200;
@@ -17,10 +16,25 @@ $text-sm: 0.8125rem;    //13px
 $text-mobile-xl: 1.5rem; //24px
 
 //LINE-HEIGHT
-$line-lg: 1.6;
-$line-md: 1.4;
-$line-sm: 1.35;
+$line-height-lg: 1.6;
+$line-height-md: 1.4;
+$line-height-sm: 1.35;
 
 //LETTER-SPACING
-$letter-default: 0px;
+$letter-default: 0;
 $letter-bigger: 0.25px;
+
+//-------------MIXINS
+@mixin text-preset-1 (
+    $family: $primary-family,
+    $weight: $semibold,
+    $size: $text-xl,
+    $height: $line-height-md,
+    $letter: $letter-bigger
+) {
+    font-family: $family;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $letter;
+}
