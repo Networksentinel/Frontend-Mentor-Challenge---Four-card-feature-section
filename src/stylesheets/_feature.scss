@@ -1,5 +1,6 @@
 @use './design' as *;
 
+//GENERAL
 .feature {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
     gap: $space-xxl;
 }
 
+//INTRO
 .feature__intro {
     width: clamp(19.75rem, 57vw + 6.39rem, 33.75rem);
     display: flex;
@@ -26,3 +28,7 @@
 .feature__intro-2title {
     @include text-preset-1;
 }
+
+//NAVIGATION
+
+//CARDS
