@@ -54,11 +54,11 @@
     &--supervisor {
         border-color: $card-supervisor;
 
-        @media (min-width: 768px) {
+        @media (min-width: $breakpoint-tablet) {
         grid-area: top;
         justify-self: center;
         }
-        @media (min-width: 1440px) {
+        @media (min-width: $breakpoint-desktop) {
         grid-area: left;
         align-self: center;
         }
@@ -72,11 +72,11 @@
     &--calculator {
         border-color: $card-calculator;
 
-        @media (min-width: 768px) {
+        @media (min-width: $breakpoint-tablet) {
             grid-area: bottom;
             justify-self: center;
         }
-        @media (min-width: 1440px) {
+        @media (min-width: $breakpoint-desktop) {
             grid-area: right;
             align-self: center;
         }
