@@ -11,8 +11,8 @@
     margin-bottom: clamp(2.875rem, 8.652vw + 0.8472rem, 5rem);
 
     @media (min-width: 768px) {
-    margin-top: clamp(5rem, 3.274vw + 3.429rem, 6.375rem);
-    margin-bottom: clamp(5rem, 12.352vw - 0.929rem, 10.1875rem);
+        margin-top: clamp(5rem, 3.274vw + 3.429rem, 6.375rem);
+        margin-bottom: clamp(5rem, 12.352vw - 0.929rem, 10.1875rem);
     }
 }
 
@@ -24,17 +24,17 @@
     text-align: center;
     gap: $space-sm;
 
+    &-1title {
+        @include text-preset-2;
+    }
+
+    &-2title {
+        @include text-preset-1;
+    }
+
     & p {
         @include text-preset-4;
     }
-}
-
-.feature__intro-1title {
-    @include text-preset-2;
-}
-
-.feature__intro-2title {
-    @include text-preset-1;
 }
 
 //NAVIGATION

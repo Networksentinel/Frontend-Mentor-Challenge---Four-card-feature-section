@@ -71,12 +71,12 @@
         border-color: $card-calculator;
 
         @media (min-width: 768px) {
-        grid-area: bottom;
-        justify-self: center;
+            grid-area: bottom;
+            justify-self: center;
         }
         @media (min-width: 1440px) {
-        grid-area: right;
-        align-self: center;
+            grid-area: right;
+            align-self: center;
         }
     }
 }
