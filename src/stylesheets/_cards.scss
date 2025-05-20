@@ -1,5 +1,6 @@
 @use './design' as *;
 
+//GENERAL
 .feature__card {
     width: clamp(19.625rem, 5.357vw + 17.05rem, 21.875rem);
 
@@ -24,6 +25,7 @@
         transform: translateY(-3px)
     }
 
+    //INDIVIDUAL STYLES
     &--supervisor {
         border-color: $card-supervisor;
     }
@@ -37,6 +39,7 @@
         border-color: $card-calculator;
     }
 
+    //TEXT AND ICONS
     &-text h4 {
         @include text-preset-3;
     }
