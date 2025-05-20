@@ -32,3 +32,10 @@
 //NAVIGATION
 
 //CARDS
+.feature__card {
+    display: block;
+    width: clamp(19.625rem, 5.357vw + 17.05rem, 21.875rem);
+
+    padding: $space-lg;
+    
+}
