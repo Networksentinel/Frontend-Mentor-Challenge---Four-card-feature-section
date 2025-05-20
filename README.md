@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution LINK](https://your-solution-url.com)
-- [Live Site LINK](https://your-live-site-url.com)
+- [Solution LINK](https://www.frontendmentor.io/solutions/responsive-four-card-feature-using-css-grid-fqj-eUcwaS)
+- [Live Site LINK](https://networksentinel.github.io/Frontend-Mentor-Challenge---Four-card-feature-section/)
 
 ## My process
 
