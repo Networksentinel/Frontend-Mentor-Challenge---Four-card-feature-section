@@ -39,12 +39,22 @@
     flex-direction: column;
     gap: $space-lg;
 
-    box-shadow: 0px 15px 30px -11px rgba(131,166,210,0.5);
-    -webkit-box-shadow: 0px 15px 30px -11px rgba(131,166,210,0.5);
-    -moz-box-shadow: 0px 15px 30px -11px rgba(131,166,210,0.5);
+    box-shadow: 0px 15px 30px -11px $color-additional;
+    -webkit-box-shadow: 0px 15px 30px -11px $color-additional;
+    -moz-box-shadow: 0px 15px 30px -11px $color-additional;
 
+    border-top: solid 4px black;
     border-radius: $space-xm;
     padding: $space-lg;
+
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: lighten($color-additional, 25%);
+        transform: translateY(-3px)
+    }
 
     &-text h4 {
         @include text-preset-3;
