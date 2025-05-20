@@ -6,6 +6,15 @@
     flex-direction: column;
     align-items: center;
     gap: $space-xxl;
+
+    margin-top: clamp(3.5rem, 6.107vw + 2.06875rem, 5rem);
+    margin-bottom: clamp(2.875rem, 8.652vw + 0.8472rem, 5rem);
+    
+    @media (min-width: 768px) {
+    margin-top: clamp(5rem, 3.274vw + 3.429rem, 6.375rem);
+    margin-bottom: clamp(5rem, 12.352vw - 0.929rem, 10.1875rem);
+
+}
 }
 
 //INTRO
@@ -30,6 +39,10 @@
 }
 
 //NAVIGATION
+.feature__nav {
+    display: grid;
+    gap: $space-lg;
+}
 
 //CARDS
 .feature__card {
