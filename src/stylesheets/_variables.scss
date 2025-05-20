@@ -11,10 +11,10 @@ $card-karma: #FCAE4A;                       //orange
 $card-calculator: #549EF2;                  //blue
 
 //SPACINGS
-$space-xxl: 3.75rem; //600-60px
-$space-xl: 2.5rem;   //500-40px
-$space-lg: 2rem;     //400-32px
-$space-md: 1.5rem;   //300-24px
-$space-sm: 1rem;     //200-16px
-$space-xm: 0.5rem;   //100-8px
-$space-xxm: 0.375rem;   //50-6px
+$space-xxl: clamp(3.75rem, 9.6354vw, 4.625rem); //60px (mobile) 72px (tablet/desktop)
+$space-xl: 2.5rem;       //500-40px
+$space-lg: 2rem;         //400-32px
+$space-md: 1.5rem;       //300-24px
+$space-sm: 1rem;         //200-16px
+$space-xm: 0.5rem;       //100-8px
+$space-xxm: 0.375rem;    //50-6px
