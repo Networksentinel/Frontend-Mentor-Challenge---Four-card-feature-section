@@ -13,8 +13,7 @@
     @media (min-width: 768px) {
     margin-top: clamp(5rem, 3.274vw + 3.429rem, 6.375rem);
     margin-bottom: clamp(5rem, 12.352vw - 0.929rem, 10.1875rem);
-
-}
+    }
 }
 
 //INTRO
@@ -48,5 +47,10 @@
         "top top"
         "mid1 mid2"
         "bottom bottom";
-}
+    }
+    @media (min-width: 1440px) {
+        grid-template-areas: 
+        "left mid1 right"
+        "left mid2 right";
+    }
 }

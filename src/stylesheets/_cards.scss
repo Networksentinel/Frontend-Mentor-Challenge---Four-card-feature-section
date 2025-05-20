@@ -55,7 +55,11 @@
         @media (min-width: 768px) {
         grid-area: top;
         justify-self: center;
-    }
+        }
+        @media (min-width: 1440px) {
+        grid-area: left;
+        align-self: center;
+        }
     }
     &--team {
         border-color: $card-team;
@@ -69,6 +73,10 @@
         @media (min-width: 768px) {
         grid-area: bottom;
         justify-self: center;
-    }
+        }
+        @media (min-width: 1440px) {
+        grid-area: right;
+        align-self: center;
+        }
     }
 }
