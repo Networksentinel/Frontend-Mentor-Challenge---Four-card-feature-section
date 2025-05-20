@@ -33,9 +33,25 @@
 
 //CARDS
 .feature__card {
-    display: block;
     width: clamp(19.625rem, 5.357vw + 17.05rem, 21.875rem);
 
+    display: flex;
+    flex-direction: column;
+    gap: $space-lg;
+
     padding: $space-lg;
-    
+
+    &-text h4 {
+        @include text-preset-3;
+    }
+    &-text p {
+        @include text-preset-5;
+        color: $color-secondary;
+    }
+    &-icon {
+        align-self: flex-end;
+
+        width: 4rem;
+        height: 4rem;
+    }
 }
