@@ -28,6 +28,10 @@
     //INDIVIDUAL STYLES
     &--supervisor {
         border-color: $card-supervisor;
+        @media (min-width: 768px) {
+        grid-area: 1 / 1 / 2 / 3;
+        justify-self: center;
+    }
     }
     &--team {
         border-color: $card-team;
@@ -37,6 +41,10 @@
     }
     &--calculator {
         border-color: $card-calculator;
+        @media (min-width: 768px) {
+        grid-area: 3 / 1 / 4 / 3;
+        justify-self: center;
+    }
     }
 
     //TEXT AND ICONS

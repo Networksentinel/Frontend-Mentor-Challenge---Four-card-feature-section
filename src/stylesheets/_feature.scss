@@ -42,4 +42,9 @@
 .feature__nav {
     display: grid;
     gap: $space-lg;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+}
 }
