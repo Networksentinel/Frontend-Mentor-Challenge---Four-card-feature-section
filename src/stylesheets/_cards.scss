@@ -1,0 +1,53 @@
+@use './design' as *;
+
+.feature__card {
+    width: clamp(19.625rem, 5.357vw + 17.05rem, 21.875rem);
+
+    display: flex;
+    flex-direction: column;
+    gap: $space-lg;
+
+    box-shadow: 0px 15px 30px -11px $color-additional;
+    -webkit-box-shadow: 0px 15px 30px -11px $color-additional;
+    -moz-box-shadow: 0px 15px 30px -11px $color-additional;
+
+    border-top: solid 4px black;
+    border-radius: $space-xm;
+    padding: $space-lg;
+
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: lighten($color-additional, 28%);
+        transform: translateY(-3px)
+    }
+
+    &--supervisor {
+        border-color: $card-supervisor;
+    }
+    &--team {
+        border-color: $card-team;
+    }
+    &--karma {
+        border-color: $card-karma;
+    }
+    &--calculator {
+        border-color: $card-calculator;
+    }
+
+    &-text h4 {
+        @include text-preset-3;
+    }
+    &-text p {
+        @include text-preset-5;
+        color: $color-secondary;
+    }
+    &-icon {
+        align-self: flex-end;
+
+        width: 4rem;
+        height: 4rem;
+    }
+}
