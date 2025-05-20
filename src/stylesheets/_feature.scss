@@ -39,6 +39,11 @@
     flex-direction: column;
     gap: $space-lg;
 
+    box-shadow: 0px 15px 30px -11px rgba(131,166,210,0.5);
+    -webkit-box-shadow: 0px 15px 30px -11px rgba(131,166,210,0.5);
+    -moz-box-shadow: 0px 15px 30px -11px rgba(131,166,210,0.5);
+
+    border-radius: $space-xm;
     padding: $space-lg;
 
     &-text h4 {
