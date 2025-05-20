@@ -44,7 +44,9 @@
     gap: $space-lg;
 
     @media (min-width: 768px) {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "top top"
+        "mid1 mid2"
+        "bottom bottom";
 }
 }

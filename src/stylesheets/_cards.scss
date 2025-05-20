@@ -25,11 +25,35 @@
         transform: translateY(-3px)
     }
 
+    //TEXT AND ICONS
+    &-text {
+        display: flex;
+        flex-direction: column;
+        gap: $space-xxm;
+    }
+
+    &-text h4 {
+        @include text-preset-3;
+    }
+
+    &-text p {
+        @include text-preset-5;
+        color: $color-secondary;
+    }
+
+    &-icon {
+        align-self: flex-end;
+
+        width: 4rem;
+        height: 4rem;
+    }
+
     //INDIVIDUAL STYLES
     &--supervisor {
         border-color: $card-supervisor;
+
         @media (min-width: 768px) {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: top;
         justify-self: center;
     }
     }
@@ -41,24 +65,10 @@
     }
     &--calculator {
         border-color: $card-calculator;
+
         @media (min-width: 768px) {
-        grid-area: 3 / 1 / 4 / 3;
+        grid-area: bottom;
         justify-self: center;
     }
-    }
-
-    //TEXT AND ICONS
-    &-text h4 {
-        @include text-preset-3;
-    }
-    &-text p {
-        @include text-preset-5;
-        color: $color-secondary;
-    }
-    &-icon {
-        align-self: flex-end;
-
-        width: 4rem;
-        height: 4rem;
     }
 }
