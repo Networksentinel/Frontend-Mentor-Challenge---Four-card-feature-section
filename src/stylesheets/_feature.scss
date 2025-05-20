@@ -56,6 +56,19 @@
         transform: translateY(-3px)
     }
 
+    &--supervisor {
+        border-color: $card-supervisor;
+    }
+    &--team {
+        border-color: $card-team;
+    }
+    &--karma {
+        border-color: $card-karma;
+    }
+    &--calculator {
+        border-color: $card-calculator;
+    }
+//STILL .feature__card
     &-text h4 {
         @include text-preset-3;
     }
