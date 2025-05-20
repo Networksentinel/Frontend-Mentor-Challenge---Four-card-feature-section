@@ -1,0 +1,19 @@
+@use './design' as *;
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    gap: $space-xxm;
+    flex-wrap: wrap;
+
+    padding: $space-xm $space-xm;
+    transition: all 0.3s ease-in-out;
+
+    & a {
+        color: $color-secondary;
+        &:hover,
+        &:focus {
+            color: darken($color-primary, 20%);
+        }
+    }
+}
