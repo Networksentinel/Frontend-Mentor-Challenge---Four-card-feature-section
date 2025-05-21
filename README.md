@@ -54,13 +54,13 @@ Both worked really well, but I ended up using the latter one:
     display: grid;
     gap: $space-lg;
 
-    @media (min-width: 768px) {
+    @media (min-width: $breakpoint-tablet) {
         grid-template-areas: 
         "top top"
         "mid1 mid2"
         "bottom bottom";
     }
-    @media (min-width: 1440px) {
+    @media (min-width: $breakpoint-desktop) {
         grid-template-areas: 
         "left mid1 right"
         "left mid2 right";
